@@ -1,0 +1,12 @@
+body {
+  font-family: var(--font--primary);
+  color: var(--color-base-text);
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

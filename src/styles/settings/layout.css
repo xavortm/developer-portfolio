@@ -1,0 +1,9 @@
+:root {
+  --body-inset: 4.375rem;
+
+  --layout-aside-width: 19.375rem;
+  --layout-padding: 1.375rem;
+  --layout-breadcrumbs-padding-block: 0.625rem;
+
+  --layout-list-clickable-padding: 0.375em;
+}

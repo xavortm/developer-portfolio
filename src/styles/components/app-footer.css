@@ -1,0 +1,13 @@
+.app-footer {
+  border-top: 1px solid var(--color-border--main);
+  display: flex;
+  justify-content: space-between;
+
+  & .app-navigation {
+    --item-block-padding: 0.875rem;
+
+    & li:first-child {
+      --item-block-padding: 0.875rem var(--layout-padding);
+    }
+  }
+}

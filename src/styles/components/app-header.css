@@ -1,0 +1,21 @@
+.app-header {
+  display: grid;
+  grid-template-columns: var(--layout-aside-width) 1fr;
+  border-bottom: 1px solid var(--color-border--main);
+
+  & .app-header__brand {
+    border-right: 1px solid var(--color-border--main);
+
+    & a {
+      color: var(--color-base-text);
+      display: block;
+      padding: 1.25em var(--layout-padding);
+    }
+  }
+
+  & .app-header__navigation {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+  }
+}

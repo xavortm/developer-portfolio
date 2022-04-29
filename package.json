@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  }
+}

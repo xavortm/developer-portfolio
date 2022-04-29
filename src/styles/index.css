@@ -1,0 +1,22 @@
+@import "./global/reset.css";
+@import "./global/typography.css";
+
+@import "./settings/colors.css";
+@import "./settings/layout.css";
+@import "./settings/fonts.css";
+@import "./settings/animations.css";
+
+@import "./layout/global.css";
+@import "./layout/app.css";
+
+@import "./components/app-header.css";
+@import "./components/app-footer.css";
+@import "./components/app-main.css";
+@import "./components/app-navigation.css";
+@import "./components/app-content.css";
+@import "./components/app-aside.css";
+
+@import "./components/widget.css";
+@import "./components/label.css";
+@import "./components/folder-browser.css";
+@import "./components/list-labels.css";

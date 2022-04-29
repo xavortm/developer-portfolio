@@ -1,0 +1,49 @@
+.folder-browser {
+  --folder-icon-width: 0.625em;
+  --folder-dropdown-icon-gap: 0.875em;
+
+  & button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: var(--folder-dropdown-icon-gap);
+    cursor: pointer;
+    padding: var(--layout-list-clickable-padding) 0;
+    width: 100%;
+
+    &:hover {
+      color: var(--color-base-text--contrast);
+    }
+  }
+
+  & .folder-browser__arrow {
+    width: var(--folder-icon-width);
+    transform: rotate(0);
+    transition: var(--animation-duration--out) transform;
+  }
+
+  & .folder-browser {
+    --items-height-total: 0;
+    max-height: var(--items-height-total);
+    overflow-y: hidden;
+    padding-inline-start: calc(
+      var(--folder-icon-width) + var(--folder-dropdown-icon-gap)
+    );
+    transition: var(--animation-duration--in) max-height;
+  }
+
+  & .folder-browser__item:not(.folder-browser__item--is-open) {
+    --items-hight-hidden: 0;
+  }
+}
+
+.folder-browser__item--is-open {
+  & > button {
+    color: var(--color-base-text--contrast);
+  }
+
+  & .folder-browser__arrow {
+    transform: rotate(90deg);
+    transition: var(--animation-duration--in) transform;
+  }
+}

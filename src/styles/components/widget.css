@@ -1,0 +1,28 @@
+.widget {
+  --layout-inline-padding: 0.875rem;
+
+  & .widget__header {
+    border-bottom: 1px solid var(--color-border--main);
+
+    & .label {
+      width: 100%;
+      padding: var(--layout-breadcrumbs-padding-block)
+        var(--layout-inline-padding);
+      transition: var(--animation-duration--out) background-color;
+      color: var(--color-base-text--contrast);
+
+      &:hover {
+        background-color: var(--color-base-background--hover);
+        transition: var(--animation-duration--in) background-color;
+      }
+    }
+  }
+
+  & .widget__content {
+    padding: 1rem var(--layout-inline-padding);
+  }
+}
+
+.widget + .widget {
+  border-top: 1px solid var(--color-border--main);
+}
