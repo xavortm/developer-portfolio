@@ -6,8 +6,11 @@
   --color-base-background--hover: #041f35;
   --color-base-text: #607b96;
   --color-base-text--contrast: #ffffff;
+  --color-border-main: #1e2d3d;
+  --color-border-main--focus: #293B50;
 
-  --color-border--main: #1e2d3d;
+  --color-code-background: #011221;
+  --color-code-highlight-background: rgba(96, 123, 150, .3);
 
   /* Named colors */
   --constant-color--dark-salmon: #e99287;
@@ -22,6 +25,6 @@
     --color-base-text: #5d7a92;
     --color-base-text--contrast: #000000;
 
-    --color-border--main: #d2dfe5;
+    --color-border-main: #d2dfe5;
   } */
 }

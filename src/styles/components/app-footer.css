@@ -1,5 +1,5 @@
 .app-footer {
-  border-top: 1px solid var(--color-border--main);
+  border-top: 1px solid var(--color-border-main);
   display: flex;
   justify-content: space-between;
 

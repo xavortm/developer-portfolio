@@ -6,5 +6,9 @@
     "drafts": {
       "nesting": true
     }
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "highlight.js": "^11.5.1"
   }
 }

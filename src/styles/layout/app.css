@@ -2,7 +2,7 @@
   width: calc(100% - var(--body-inset) * 2);
   height: calc(100% - var(--body-inset) * 2);
   background: var(--color-base-background);
-  border: 1px solid var(--color-border--main);
+  border: 1px solid var(--color-border-main);
   border-radius: 0.5rem;
 
   display: flex;

@@ -1,4 +1,5 @@
 @import "./global/reset.css";
+@import "./global/misc.css";
 @import "./global/typography.css";
 
 @import "./settings/colors.css";
@@ -20,3 +21,4 @@
 @import "./components/label.css";
 @import "./components/folder-browser.css";
 @import "./components/list-labels.css";
+@import "./components/code-highlight.css";

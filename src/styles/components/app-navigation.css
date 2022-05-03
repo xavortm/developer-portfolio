@@ -6,7 +6,7 @@
   }
 
   & li {
-    border-right: 1px solid var(--color-border--main);
+    border-right: 1px solid var(--color-border-main);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@
 
 .app-navigation + .app-navigation {
   & li:first-child {
-    border-left: 1px solid var(--color-border--main);
+    border-left: 1px solid var(--color-border-main);
   }
 }
 
