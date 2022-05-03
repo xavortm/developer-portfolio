@@ -22,3 +22,7 @@
 @import "./components/folder-browser.css";
 @import "./components/list-labels.css";
 @import "./components/code-highlight.css";
+@import "./components/split-view-container.css";
+@import "./components/file-tabs.css";
+@import "./components/gist-snippet.css";
+@import "./components/author-details.css";

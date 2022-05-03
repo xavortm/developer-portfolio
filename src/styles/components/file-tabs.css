@@ -1,0 +1,44 @@
+.file-tabs {
+  border-bottom: 1px solid var(--color-border-main);
+  min-height: 2.5625rem;
+
+  & .file-tabs__tab-title,
+  & .file-tabs__tab-close {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-base-text--contrast);
+    }
+  }
+
+  & .file-tabs__tab-title {
+    padding: 0.875em;
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  & .file-tabs__tab-close {
+    padding: .5em;
+
+    & svg {
+      display: block;
+    }
+  }
+
+  & .file-tabs__tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 13.75rem;
+    border-right: 1px solid var(--color-border-main);
+  }
+
+  & ul {
+    display: flex;
+  }
+}

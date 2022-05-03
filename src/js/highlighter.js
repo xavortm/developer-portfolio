@@ -3,17 +3,21 @@ import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import 'highlight.js/styles/night-owl.css';
 
-const testValue = `function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {
-  const value: T = parseModel(chunk._response, chunk._value);
-  const initializedChunk: InitializedChunk<T> = (chunk: any);
-  initializedChunk._status = INITIALIZED;
-  initializedChunk._value = value;
-  return value;
-}`;
+/**
+ * Enable highlighter.js for the selected HTML tag.
+ *
+ * How to use:
+ * <pre class="code-snippet"><code class="language-javascript"></code></pre>
+ */
+const highlighterInit = (selector, code) => {
+  const codeTest = document.querySelector(selector);
 
-const highlighterInit = () => {
-  const codeTest = document.querySelector('.code-snippet code');
-  codeTest.innerHTML = escapeHtml(testValue);
+  if (!selector || !code) {
+    return;
+  }
+
+  codeTest.innerHTML = escapeHtml(code);
+
   hljs.registerLanguage('javascript', javascript);
   hljs.highlightElement(codeTest);
 }
