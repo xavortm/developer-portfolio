@@ -1,0 +1,9 @@
+.gists-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.is-page--about .gists-group {
+  margin-top: 3.5em;
+}

@@ -25,4 +25,5 @@
 @import "./components/split-view-container.css";
 @import "./components/file-tabs.css";
 @import "./components/gist-snippet.css";
+@import "./components/gists-group.css";
 @import "./components/author-details.css";

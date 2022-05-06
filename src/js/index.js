@@ -1,4 +1,5 @@
 import highlighterInit from './highlighter';
+import calculateScrollArea from './calculateScrollArea';
 
 /**
  * Change with the code snippet you will output on the page.
@@ -12,3 +13,4 @@ const codeSnippet = `function initializeModelChunk<T>(chunk: ResolvedModelChunk)
 }`;
 
 highlighterInit('.code-snippet code', codeSnippet);
+calculateScrollArea();

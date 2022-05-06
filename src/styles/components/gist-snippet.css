@@ -1,0 +1,17 @@
+.gist-snippet {
+  & .gist-snippet__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  & .gist-snippet__actions {
+    font-size: .875em;
+    display: flex;
+    gap: 1.5em;
+  }
+
+  & .gist-snippet__code {
+    margin-top: .875rem;
+  }
+}

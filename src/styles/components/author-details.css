@@ -1,1 +1,23 @@
-.author-details {}
+.author-details {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+
+  & .author-details__name {
+    color: var(--color--secondary);
+    font-weight: bold;
+    font-size: .875rem;
+    display: block;
+    margin-bottom: 0.125em;
+  }
+
+  & .author-details__info {
+    font-size: .75rem;
+  }
+
+  & .author-details__image {
+    & img {
+      border-radius: 50%;
+    }
+  }
+}

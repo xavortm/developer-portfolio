@@ -12,4 +12,8 @@
 
 button.label {
   cursor: pointer;
+
+  &:hover {
+    color: var(--color-base-text--contrast);
+  }
 }

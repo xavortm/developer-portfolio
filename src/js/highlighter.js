@@ -10,16 +10,18 @@ import 'highlight.js/styles/night-owl.css';
  * <pre class="code-snippet"><code class="language-javascript"></code></pre>
  */
 const highlighterInit = (selector, code) => {
-  const codeTest = document.querySelector(selector);
+  const codeTest = document.querySelectorAll(selector);
 
   if (!selector || !code) {
     return;
   }
 
-  codeTest.innerHTML = escapeHtml(code);
+  codeTest.forEach(element => {
+    element.innerHTML = escapeHtml(code);
+    hljs.registerLanguage('javascript', javascript);
+    hljs.highlightElement(element);
+  });
 
-  hljs.registerLanguage('javascript', javascript);
-  hljs.highlightElement(codeTest);
 }
 
 export default highlighterInit;
