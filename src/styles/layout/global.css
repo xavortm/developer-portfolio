@@ -1,6 +1,19 @@
 html {
   box-sizing: border-box;
+
+  @media (min-width: 1920px) {
+    font-size: 1.25em
+  }
+
+  @media (min-width: 2560px) {
+    font-size: 1.5em
+  }
+
+   @media (min-width: 3200px) {
+    font-size: 1.75em
+  }
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -17,4 +30,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-left: 1px solid var(--color-border-main);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-base-background--hover);
+}
+
+::-webkit-scrollbar {
+  width: .75rem;
+}
+
+
+*:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-base-text);
 }

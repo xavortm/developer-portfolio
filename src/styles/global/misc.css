@@ -1,3 +1,7 @@
 ::selection {
   background-color: var(--color-code-highlight-background);
 }
+
+button {
+  font-size: inherit;
+}

@@ -21,8 +21,25 @@
   & .widget__content {
     padding: 1rem var(--layout-inline-padding);
   }
+
+   &:not(.is-open) {
+    --items-hight-hidden: 0;
+  }
+
+  & .widget__content > .folder-browser {
+    max-height: 0;
+    transition: var(--animation-duration--in) max-height;
+    overflow-y: hidden;
+  }
 }
 
 .widget + .widget {
   border-top: 1px solid var(--color-border-main);
+}
+
+.widget.is-open {
+  & .widget__content > .folder-browser {
+    max-height: var(--items-height-total);
+    transition: var(--animation-duration--out) max-height;
+  }
 }

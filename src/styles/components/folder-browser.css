@@ -23,21 +23,24 @@
   }
 
   & .folder-browser {
-    --items-height-total: 0;
-    max-height: var(--items-height-total);
+    max-height: 0;
     overflow-y: hidden;
     padding-inline-start: calc(
       var(--folder-icon-width) + var(--folder-dropdown-icon-gap)
-    );
+      );
     transition: var(--animation-duration--in) max-height;
   }
 
-  & .folder-browser__item:not(.folder-browser__item--is-open) {
+  & .folder-browser__item:not(.is-open) {
     --items-hight-hidden: 0;
   }
 }
 
-.folder-browser__item--is-open {
+.folder-browser__item.is-open {
+  & .folder-browser {
+    max-height: var(--items-height-total);
+  }
+
   & > button {
     color: var(--color-base-text--contrast);
   }

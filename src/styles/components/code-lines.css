@@ -1,0 +1,24 @@
+.code-lines {
+  --line-height: 1.5em;
+
+  line-height: var(--line-height);
+  counter-reset: code-lines;
+  padding-left: 3.75em;
+  font-size: 1.125em;
+  white-space: nowrap;
+
+  & > li {
+    counter-increment: code-lines;
+    position: relative;
+
+    &::before {
+      content: counter(code-lines);
+      position: absolute;
+      text-align: right;
+      left: -3.75rem;
+      display: block;
+      width: 3ch;
+    }
+  }
+
+}

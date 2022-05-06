@@ -1,5 +1,6 @@
 import highlighterInit from './highlighter';
 import calculateScrollArea from './calculateScrollArea';
+import toggleFolders from "./toggleFolders";
 
 /**
  * Change with the code snippet you will output on the page.
@@ -14,3 +15,6 @@ const codeSnippet = `function initializeModelChunk<T>(chunk: ResolvedModelChunk)
 
 highlighterInit('.code-snippet code', codeSnippet);
 calculateScrollArea();
+
+toggleFolders(".folder-browser__item--folder", "button", ".folder-browser");
+toggleFolders(".widget", ".widget__header button", ".widget__content");
